@@ -1,0 +1,49 @@
+/* Style de base (pour grands écrans) */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #97d5f2, #f8fbf8);
+    color: rgb(2, 187, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 10px;
+}
+
+/* Responsive Design: pour les écrans plus petits */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input {
+        width: 70%;
+        padding: 8px;
+    }
+
+    button {
+        width: 75%;
+        padding: 10px;
+        background-color: aqua;
+        border-radius: 5px;
+        margin: 4px 0;
+    }
+
+    #weatherResult {
+        font-size: 16px;
+        color: black;
+    }
+}
